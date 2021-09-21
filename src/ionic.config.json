@@ -1,0 +1,7 @@
+{
+    "name": "load-json-react",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }

@@ -1,13 +1,16 @@
 import React from "react";
+import Login from "./login/Login";
 import "./App.css";
-import { Stocks } from "./Stocks";
+import AppNew from "./AppNew";
+import useAuthenticate from "./hooks/useAuthenticate";
+// import Temp from "./ExportToExcel/temp";
 
-function App() {
+const App = () =>{
+  const isAuthtenticated = useAuthenticate();
   return (
-    <div className="App">
-      <Stocks />
+    <div>
+      {isAuthtenticated ? <AppNew/> : <Login/>}
     </div>
   );
 }
-
 export default App;
