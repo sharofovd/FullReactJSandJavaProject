@@ -28,18 +28,17 @@
       sort: 'asc'||'desc',
       width: 100
     },
-    {
-      label: 'PointName',
-      field: 'user_id',
-      sort: 'asc',
-      width: 150
-    }
+    // {
+    //   label: 'PointName',
+    //   field: 'user_id',
+    //   sort: 'asc',
+    //   width: 150
+    // }
   ];
  const headers = "Мониторинг онлайн-пользователей";
 
  const LiveUsers = () => {
     const [users, setUsers] = useState([]);
-  //  const [loading, setLoading] = useState(false);
     useEffect(() => {
         api.get("onlineusers").then(res => setUsers(res.data))
     },[])
