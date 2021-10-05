@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {useInput} from "../hooks/useInput";
 import api from "../settings/api";
 // import Pretty from "../hooks/Memo";
-
+import Header from "../components/Header";
 export default function NameForm(props) {
     const { value, setValue } = useInput(''); // bind,  //reset,
     const [bssreq, setBssreq] = useState(undefined);
@@ -26,12 +26,13 @@ export default function NameForm(props) {
             .catch((err) => console.log("ERROR: ", err))
         //    reset();
     }
-
+    const headers = "Метод 'getBalance'";
     return (
         <div className="container">
-            <div>
+            {/* <div>
                 <h1 style={{color:"#0e1c4f", borderRadius:"10px", backgroundColor: "#f1f3f4",marginTop:"10px",marginBottom:"10px",textAlign:"center"}}>Метод "getBalance"</h1>
-            </div>
+            </div> */}
+            <Header headers={headers}/>
             <form onSubmit={handleSubmit}>
                 <label style={{fontSize:"1.4rem", color:"black"}}>Pan:</label>
                 <input type="text" onChange={changeHandleWithRegex} value={value} required placeholder="Enter CardNumber"/>

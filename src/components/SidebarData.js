@@ -132,6 +132,11 @@ export const SidebarData = [
         path: "/getpintrycount",
         icon: <FlIcons.FiCreditCard/>,
       },
+      {
+        title: "TIETO [TietoBalance]",
+        path: "/tietobalance",
+        icon: <FlIcons.FiCreditCard/>,
+      },
     ],
   },
   // end

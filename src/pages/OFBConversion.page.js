@@ -114,8 +114,9 @@ export default class index extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <div style={{color:"white",backgroundColor:"#454b4e",fontFamily:"inherit",borderRadius:"5px",paddingTop:"30px",paddingBottom:"20px"}}>
                         <div style={{display:"flex",flexDirection:"row"}}>
-                                        <label  style={{marginLeft:"20px"}}>From</label><DatePicker type="text" selected={this.state.fecha} onChange={this.onChange} />
-                                        <label>To</label><DatePicker type="text" selected={this.state.fecha1} onChange={this.onChange1}/>
+
+                                        <label  style={{marginLeft:"20px",display:"block"}}>From</label><DatePicker type="text" selected={this.state.fecha} onChange={this.onChange} />
+                                        <label style={{marginLeft:"20px",display:"block"}}>To</label><DatePicker type="text" selected={this.state.fecha1} onChange={this.onChange1}/>
                             <button className="excelButton" type="submit">FIND</button>
                             {/* <div className="d-flex justify-content-end"> 
                                            <label>Total: <input type='text' value={parseFloat(this.state.total1).toFixed(2).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")+' USD'} disabled='disabled'/><input type='text' value={parseFloat(this.state.total).toFixed(2).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")+' UZS'} disabled='disabled'/></label>

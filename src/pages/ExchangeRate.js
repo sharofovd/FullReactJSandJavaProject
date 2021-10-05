@@ -53,7 +53,7 @@ const ExchangeRate = () => {
                     <li title={names[this.props.item.id].cur} style={{ width: "50px" }}><img alt="flag" src={this.props.item.img} width="35px" height="35px" /></li>
                     <li style={{ width: "50px" }}>{names[this.props.item.id].value}</li>
 
-                {/* Dynamic Part */}
+                {/* Dynamic Part */ console.log(this.props.child)}
                     <li style={{ width: "50px" }}>{this.props.child.buying_rate}</li>
                     <li style={{ width: "50px" }}>{this.props.child.selling_rate}</li>
             </ul>

@@ -22,12 +22,12 @@
       sort: 'asc',
       width: 200
     },
-    {
-      label: 'LastAccess',
-      field: 'point_name',
-      sort: 'asc'||'desc',
-      width: 100
-    },
+    // {
+    //   label: 'LastAccess',
+    //   field: 'point_name',
+    //   sort: 'asc'||'desc',
+    //   width: 100
+    // },
     // {
     //   label: 'PointName',
     //   field: 'user_id',

@@ -48,6 +48,7 @@ import CardServices from './pages/BSSCardOpen.page';
 import OpenPhysicalCard from './pages/OpenPhysicalCard.page';
 import PCTietoGetCardPinTryCount from './pages/PCTietoGetcardPinTryCount';
 import BssCovertions from './pages/BSSConvertions';
+import TietoBalance from './pages/PCTietoBalance';
 // import Temp from "./ExportToExcel/temp";
 const App=() =>{
 
@@ -93,6 +94,7 @@ const App=() =>{
         <Route path="/getbalance"              exact component={HumoGetBalance}/>
         <Route path="/getcardinfo"             exact component={HumoGetCardInfo}/>
         <Route path="/getpintrycount"          exact component={PCTietoGetCardPinTryCount}/>
+        <Route path="/tietobalance"              exact component={TietoBalance}/>
 
         <Route path="/ofbconversion"           exact component={OFBConversion}/>
         <Route path="/cardservices"            exact component={CardServices}/>

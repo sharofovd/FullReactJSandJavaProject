@@ -8,11 +8,14 @@ const DatatablePage = ({ backData,columns }) => {
   };
 
   return (
-    <MDBDataTable
-      bordered
-      small
-      data={data}
-    />
+    <div style={{overflowX:"scroll"}}>
+      <MDBDataTable
+        bordered
+        small
+        data={data}
+      />
+    </div>
+    
   );
 }
 
